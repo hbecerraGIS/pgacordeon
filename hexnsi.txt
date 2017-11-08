@@ -1,0 +1,30 @@
+x' = 0, -1, 1100000
+y' = 1, 0, 400000
+
+Create Grid
+
+Hexagonal polígono
+
+500 metros
+
+Duplicamos la capa y la ponemos en edición
+
+Abrimos Vector Affine Transformation con los siguientes parámetros
+
+X' = 1x + 0y + -288.6751345948
+Y' = 0x + 1y + 500.0
+
+Intersection de los dos grid
+
+Buffer de -50 metros al primer grid (grid base)
+
+Calculamos un ID único al buffer
+
+Creamos un spatial join del buffer con la intersección para asignar ID's únicos
+
+Rotamos con Vector Affine Transformation con los siguientes parámetros
+
+x' = 0, -1, 1100000
+y' = 1, 0, 400000
+
+Movemos a la ubicación deseada y listo.
