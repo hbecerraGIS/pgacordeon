@@ -1,0 +1,11 @@
+color_hsl( 0,0,
+   scale_linear(
+      abs(
+       (135 +
+          degrees(
+            azimuth(
+              end_point(geometry_n($geometry,@geometry_part_num)),
+              start_point(geometry_n($geometry,@geometry_part_num))
+                 )))  
+          % 360 - 180),
+      0, 180 ,0, 100))
